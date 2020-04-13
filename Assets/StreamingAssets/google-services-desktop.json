@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1033154442747",
+    "firebase_url": "https://ludo-3d-d15c1.firebaseio.com",
+    "project_id": "ludo-3d-d15c1",
+    "storage_bucket": "ludo-3d-d15c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1033154442747:android:d9a480ab29bfebfdc0475e",
+        "android_client_info": {
+          "package_name": "in.pikobox.ludo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1033154442747-rulmnk5jaefl9m46hp4h3ek2bfgd59dq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGz5vvqwHtHTfXvrEcRUKhN-mAyg4haCo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1033154442747-rulmnk5jaefl9m46hp4h3ek2bfgd59dq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
