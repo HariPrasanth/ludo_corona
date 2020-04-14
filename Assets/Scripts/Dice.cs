@@ -81,7 +81,7 @@ public class Dice : MonoBehaviour
             {
                 diceValue = side.sideValue;
                 //Send result to game manager
-                //GameManager.instance.RollDice(diceValue);
+                // GameManager.instance.RollDice(diceValue);
                 GameManager.instance.RollDice(pubDiceValue);
             }
         }

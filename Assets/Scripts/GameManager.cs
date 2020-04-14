@@ -455,7 +455,7 @@ public class GameManager : MonoBehaviour
                 available++;
             }
         }
-        Debug.Log("Game Manager Next Active Player!!!" + available);
+        // Debug.Log("Game Manager Next Active Player!!!" + available);
         if(playerList[activePlayer].hasWon && available > 2)
         {
             setNextActivePlayer();
@@ -480,7 +480,7 @@ public class GameManager : MonoBehaviour
          yield return new WaitForSeconds(1f);
          restartClick = 0;
      }
-     
+
     public void RestartGame()
     {
       showToast("Press restart again to exit", 1);

@@ -21,7 +21,7 @@ public class StartGame : MonoBehaviour
                 SaveSettings.playerNames[i] = "YELLOW CPU";
             if(i == 3)
                 SaveSettings.playerNames[i] = "BLUE CPU";
-        }        
+        }
     }
 
     public void StartTheGame(string sceneName)

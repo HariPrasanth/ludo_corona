@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427135, b: 0.56452316, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -198,8 +198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 0
   isHome: 0
@@ -290,8 +289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 0
   isHome: 0
@@ -382,8 +380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 1
   isHome: 1
@@ -652,8 +649,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 1
   isHome: 1
@@ -744,6 +740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stoneId: 3
+  stoneIndividualId: 7
   commonRoute: {fileID: 1972557501}
   finalRoute: {fileID: 1909562591}
   fullRoute: []
@@ -852,6 +849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stoneId: 2
+  stoneIndividualId: 15
   commonRoute: {fileID: 1972557501}
   finalRoute: {fileID: 912191354}
   fullRoute: []
@@ -1163,8 +1161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 1
   isHome: 1
@@ -1198,7 +1195,7 @@ Transform:
   m_GameObject: {fileID: 126063411}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.5}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 468594361}
   m_RootOrder: 1
@@ -1360,12 +1357,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
+--- !u!1 &156599079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 156599080}
+  m_Layer: 0
+  m_Name: leftBottom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &156599080
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156599079}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5, y: 0, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 48687415}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -1913,8 +1939,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 0
   isHome: 0
@@ -2306,8 +2331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 0
   isHome: 0
@@ -2587,8 +2611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 0
   isHome: 0
@@ -2679,8 +2702,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 0
   isHome: 0
@@ -2984,8 +3006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 0
   isHome: 0
@@ -3143,6 +3164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stoneId: 1
+  stoneIndividualId: 12
   commonRoute: {fileID: 1972557501}
   finalRoute: {fileID: 1641822556}
   fullRoute: []
@@ -3281,6 +3303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stoneId: 2
+  stoneIndividualId: 16
   commonRoute: {fileID: 1972557501}
   finalRoute: {fileID: 912191354}
   fullRoute: []
@@ -3452,6 +3475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stoneId: 1
+  stoneIndividualId: 11
   commonRoute: {fileID: 1972557501}
   finalRoute: {fileID: 1641822556}
   fullRoute: []
@@ -3527,7 +3551,7 @@ Transform:
   m_GameObject: {fileID: 449489027}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.5, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 468594361}
   m_RootOrder: 0
@@ -3632,7 +3656,7 @@ Transform:
   m_GameObject: {fileID: 466232889}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 468594361}
   m_RootOrder: 2
@@ -3917,8 +3941,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 0
   isHome: 0
@@ -4086,6 +4109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stoneId: 3
+  stoneIndividualId: 6
   commonRoute: {fileID: 1972557501}
   finalRoute: {fileID: 1909562591}
   fullRoute: []
@@ -4194,8 +4218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 0
   isHome: 0
@@ -4349,8 +4372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 0
   isHome: 0
@@ -4441,6 +4463,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stoneId: 0
+  stoneIndividualId: 1
   commonRoute: {fileID: 1972557501}
   finalRoute: {fileID: 1484738392}
   fullRoute: []
@@ -4662,8 +4685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 0
   isHome: 0
@@ -4804,6 +4826,66 @@ MonoBehaviour:
   isSafe: 0
   isHome: 0
   stoneCount: 0
+--- !u!1 &614234701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 614234702}
+  m_Layer: 0
+  m_Name: rightTop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &614234702
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614234701}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5, y: 0, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 125473551}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &620243660
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 620243661}
+  m_Layer: 0
+  m_Name: rightTop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &620243661
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620243660}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5, y: 0, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 15591735}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &623690083
 GameObject:
   m_ObjectHideFlags: 0
@@ -5172,8 +5254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 0
   isHome: 0
@@ -5327,6 +5408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stoneId: 0
+  stoneIndividualId: 3
   commonRoute: {fileID: 1972557501}
   finalRoute: {fileID: 1484738392}
   fullRoute: []
@@ -5782,6 +5864,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 733029899}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &733130485
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 733130486}
+  m_Layer: 0
+  m_Name: rightTop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &733130486
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733130485}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5, y: 0, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 48687415}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &742318213 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: bf4463eb6d7854e15a336e61dd5cfcc3,
@@ -6076,8 +6188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 0
   isHome: 0
@@ -6168,8 +6279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 0
   isHome: 0
@@ -6469,8 +6579,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 0
   isHome: 0
@@ -6901,8 +7010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 0
   isHome: 0
@@ -7188,6 +7296,36 @@ MonoBehaviour:
   isSafe: 0
   isHome: 0
   stoneCount: 0
+--- !u!1 &887337856
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 887337857}
+  m_Layer: 0
+  m_Name: leftBottom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &887337857
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887337856}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5, y: 0, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 891950095}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &887996487
 GameObject:
   m_ObjectHideFlags: 0
@@ -7304,8 +7442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 1
   isHome: 1
@@ -7396,8 +7533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 0
   isHome: 0
@@ -7629,8 +7765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 0
   isHome: 0
@@ -7721,8 +7856,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 0
   isHome: 0
@@ -8040,8 +8174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 0
   isHome: 0
@@ -8132,6 +8265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stoneId: 0
+  stoneIndividualId: 4
   commonRoute: {fileID: 1972557501}
   finalRoute: {fileID: 1484738392}
   fullRoute: []
@@ -8487,8 +8621,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 0
   isHome: 0
@@ -8704,8 +8837,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 0
   isHome: 0
@@ -9023,8 +9155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 0
   isHome: 0
@@ -9175,6 +9306,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1147891945}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1159917792
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1159917793}
+  m_Layer: 0
+  m_Name: leftBottom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1159917793
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159917792}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5, y: 0, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 125473551}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1207789139
 GameObject:
   m_ObjectHideFlags: 0
@@ -9500,6 +9661,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stoneId: 1
+  stoneIndividualId: 9
   commonRoute: {fileID: 1972557501}
   finalRoute: {fileID: 1641822556}
   fullRoute: []
@@ -9970,8 +10132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 0
   isHome: 0
@@ -10294,7 +10455,7 @@ Transform:
   m_GameObject: {fileID: 1445550551}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.5, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 468594361}
   m_RootOrder: 3
@@ -10562,6 +10723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stoneId: 3
+  stoneIndividualId: 8
   commonRoute: {fileID: 1972557501}
   finalRoute: {fileID: 1909562591}
   fullRoute: []
@@ -10791,6 +10953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stoneId: 2
+  stoneIndividualId: 14
   commonRoute: {fileID: 1972557501}
   finalRoute: {fileID: 912191354}
   fullRoute: []
@@ -10899,8 +11062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 0
   isHome: 0
@@ -11150,8 +11312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 0
   isHome: 0
@@ -11242,6 +11403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stoneId: 0
+  stoneIndividualId: 2
   commonRoute: {fileID: 1972557501}
   finalRoute: {fileID: 1484738392}
   fullRoute: []
@@ -11467,6 +11629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stoneId: 3
+  stoneIndividualId: 5
   commonRoute: {fileID: 1972557501}
   finalRoute: {fileID: 1909562591}
   fullRoute: []
@@ -11581,7 +11744,7 @@ Transform:
   m_GameObject: {fileID: 1557681420}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.5, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 468594361}
   m_RootOrder: 4
@@ -11743,8 +11906,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 0
   isHome: 0
@@ -12318,6 +12480,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1652884233}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1675277321
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1675277322}
+  m_Layer: 0
+  m_Name: rightTop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1675277322
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675277321}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5, y: 0, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 891950095}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1676116477
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12534,8 +12726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 0
   isHome: 0
@@ -13673,6 +13864,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stoneId: 2
+  stoneIndividualId: 13
   commonRoute: {fileID: 1972557501}
   finalRoute: {fileID: 912191354}
   fullRoute: []
@@ -14601,8 +14793,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 0
   isHome: 0
@@ -14636,7 +14827,7 @@ Transform:
   m_GameObject: {fileID: 1982787267}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.5}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 468594361}
   m_RootOrder: 5
@@ -14976,8 +15167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 0
   isHome: 0
@@ -15131,8 +15321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone:
-  - {fileID: 0}
+  stone: []
   stoneIds: 
   isSafe: 0
   isHome: 0
@@ -15286,6 +15475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stoneId: 1
+  stoneIndividualId: 10
   commonRoute: {fileID: 1972557501}
   finalRoute: {fileID: 1641822556}
   fullRoute: []
@@ -15460,6 +15650,36 @@ Transform:
   m_LocalScale: {x: 1, y: 0.025000015, z: 50}
   m_Children: []
   m_Father: {fileID: 1207789143}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2060456614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2060456615}
+  m_Layer: 0
+  m_Name: leftBottom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2060456615
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060456614}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5, y: 0, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 15591735}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2062520764

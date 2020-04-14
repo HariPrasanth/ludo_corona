@@ -16,19 +16,24 @@ public class Node : MonoBehaviour
         List<Vector3> stonePositions = new List<Vector3>();
         if (stone.Count > 1)
             stonePositions = GetPositions(stone.Count);
-        
+
         Vector3 offsetPosition = new Vector3(gameObject.transform.localScale.x, gameObject.transform.localScale.y, gameObject.transform.localScale.z);
 
-        Debug.Log(gameObject.transform.position + gameObject.transform.localScale);
-        
         int index = 0;
         foreach(Stone singleStone in stone)
         {
             singleStone.transform.localScale = new Vector3(scaleSize,scaleSize,scaleSize);
             if (stone.Count > 1)
                 singleStone.transform.position = stonePositions[index++];
+            else
+              singleStone.transform.position = gameObject.transform.position;
         }
     }
+
+    public void resizeStone(Stone singleStone){
+        singleStone.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+    }
+
     public float GetRectLength()
     {
         if (isSafe)
@@ -40,6 +45,28 @@ public class Node : MonoBehaviour
         }
         return 0;
     }
+
+    // public void Update()
+    // {
+    //   if (isSafe && stone.Count >= 1)
+    //   {
+    //     Debug.Log("Cojming in" + stone.Count);
+    //     switch(stone.Count){
+    //       case 1:
+    //         updateScale(1.0f);
+    //       break;
+    //       case 2:
+    //         updateScale(0.9f);
+    //       break;
+    //       case 3:
+    //         updateScale(0.8f);
+    //       break;
+    //       case 4:
+    //         updateScale(0.7f);
+    //       break;
+    //     }
+    //   }
+    // }
 
     public List<Vector3> GetPositions(int elementsSize)
     {
@@ -54,8 +81,8 @@ public class Node : MonoBehaviour
                     float midPointX = (topRight.position.x - bottomLeft.position.x) / 4;
                     float midPointY = (topRight.position.y - bottomLeft.position.y) / 4;
 
-                    Vector3 firstPosition = new Vector3(bottomLeft.position.x + midPointX, bottomLeft.position.y, bottomLeft.position.z + midPointY);
-                    Vector3 secondPosition = new Vector3(topRight.position.x + midPointX, topRight.position.y, topRight.position.z + midPointY);
+                    Vector3 firstPosition = new Vector3(bottomLeft.position.x + midPointX, bottomLeft.position.y, bottomLeft.position.z + midPointY + 0.18f);
+                    Vector3 secondPosition = new Vector3(topRight.position.x - midPointX, topRight.position.y, topRight.position.z + midPointY - 0.18f);
 
                     returnVectors.Add(firstPosition);
                     returnVectors.Add(secondPosition);
@@ -67,9 +94,9 @@ public class Node : MonoBehaviour
                     float midPointX = (topRight.position.x - bottomLeft.position.x) / 4;
                     float midPointY = (topRight.position.y - bottomLeft.position.y) / 4;
 
-                    Vector3 firstPosition = new Vector3(bottomLeft.position.x + midPointX, bottomLeft.position.y, bottomLeft.position.z + midPointY);
-                    Vector3 secondPosition = new Vector3(bottomLeft.position.x + midPointX * 3, bottomLeft.position.y, bottomLeft.position.z + midPointY);
-                    Vector3 thirdPosition = new Vector3(topRight.position.x - midPointX * 2, topRight.position.y, topRight.position.z + midPointY);
+                    Vector3 firstPosition = new Vector3(bottomLeft.position.x + midPointX, bottomLeft.position.y, bottomLeft.position.z + midPointY + 0.18f);
+                    Vector3 secondPosition = new Vector3(bottomLeft.position.x + midPointX * 3, bottomLeft.position.y, bottomLeft.position.z + midPointY + 0.18f);
+                    Vector3 thirdPosition = new Vector3(topRight.position.x - midPointX * 2, topRight.position.y, topRight.position.z + midPointY - 0.18f);
 
                     returnVectors.Add(firstPosition);
                     returnVectors.Add(secondPosition);
@@ -81,10 +108,10 @@ public class Node : MonoBehaviour
                     float midPointX = (topRight.position.x - bottomLeft.position.x) / 4;
                     float midPointY = (topRight.position.y - bottomLeft.position.y) / 4;
 
-                    Vector3 firstPosition = new Vector3(bottomLeft.position.x + midPointX, bottomLeft.position.y, bottomLeft.position.z + midPointY);
-                    Vector3 secondPosition = new Vector3(bottomLeft.position.x + midPointX, bottomLeft.position.y, bottomLeft.position.z + (midPointY * 3));
-                    Vector3 thirdPosition = new Vector3(topRight.position.x - midPointX, topRight.position.y, topRight.position.z - midPointY);
-                    Vector3 fourthPosition = new Vector3(topRight.position.x - midPointX, topRight.position.y, topRight.position.z - (midPointY * 3));
+                    Vector3 firstPosition = new Vector3(bottomLeft.position.x + midPointX, bottomLeft.position.y, bottomLeft.position.z + midPointY + 0.18f);
+                    Vector3 secondPosition = new Vector3(bottomLeft.position.x + midPointX, bottomLeft.position.y, bottomLeft.position.z + (midPointY + 0.18f * 3));
+                    Vector3 thirdPosition = new Vector3(topRight.position.x - midPointX, topRight.position.y, topRight.position.z - midPointY - 0.18f);
+                    Vector3 fourthPosition = new Vector3(topRight.position.x - midPointX, topRight.position.y, topRight.position.z - (midPointY + 0.18f * 3));
 
                     returnVectors.Add(firstPosition);
                     returnVectors.Add(secondPosition);
