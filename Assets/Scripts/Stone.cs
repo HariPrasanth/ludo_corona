@@ -14,6 +14,7 @@ public class Stone : MonoBehaviour
     [Header("NODES")]
     public Node startNode;
     public Node baseNode;
+    public Node homeNode;
     public Node currentNode;
     public Node goalNode;
 
@@ -86,6 +87,10 @@ public class Stone : MonoBehaviour
 
       goalNode = fullRoute[routePosition];
 
+      if(goalNode == homeNode){
+        fullRoute[fullRoute.Count - 1].stoneCount++;
+      }
+
       if(!goalNode.isSafe && goalNode.isTaken)
       {
         goalNode.stone.ReturnToBase();
@@ -93,9 +98,13 @@ public class Stone : MonoBehaviour
 
       currentNode.stone = null;
       currentNode.isTaken = false;
+      if(currentNode.stoneCount > 0){
+        currentNode.stoneCount--;
+      }
 
       goalNode.stone = this;
       goalNode.isTaken = true;
+      goalNode.stoneCount++;
 
       currentNode = goalNode;
       goalNode = null;
@@ -170,6 +179,7 @@ public class Stone : MonoBehaviour
 
       goalNode.stone = this;
       goalNode.isTaken = true;
+      goalNode.stoneCount++;
 
       currentNode = goalNode;
       goalNode = null;
@@ -192,6 +202,11 @@ public class Stone : MonoBehaviour
       if(tempPos >= fullRoute.Count)
       {
         return false;
+      }
+
+      if(fullRoute[tempPos].isHome)
+      {
+          return true;
       }
 
       return !fullRoute[tempPos].isTaken;
@@ -242,17 +257,17 @@ public class Stone : MonoBehaviour
 
     bool WinCondition()
     {
-        int completeCount = 0;
-        for(int i = 0 ; i < finalRoute.childNodeList.Count ; i++)
+        // int completeCount = 0;
+        // for(int i = 0 ; i < finalRoute.childNodeList.Count ; i++)
+        // {
+        //   if(finalRoute.childNodeList[i].GetComponent<Node>().isTaken)
+        //   {
+        //     completeCount++;
+        //   }
+        // }
+        if(fullRoute[fullRoute.Count - 1].stoneCount == 8)
         {
-          if(finalRoute.childNodeList[i].GetComponent<Node>().isTaken)
-          {
-            completeCount++;
-          }
-        }
-        if(completeCount == 4)
-        {
-            Debug.Log("Complete Count "+completeCount);
+            Debug.Log("Complete Count "+fullRoute[fullRoute.Count - 1].stoneCount);
             return true;
         }
         return false;
