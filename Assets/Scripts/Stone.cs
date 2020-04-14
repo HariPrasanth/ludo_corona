@@ -107,6 +107,20 @@ public class Stone : MonoBehaviour
         }
         currentNode.stone.Remove(currentNode.stone[removePosition]);
         currentNode.stoneIds.Remove(currentNode.stoneIds[removePosition]);
+        switch(currentNode.stone.Count){
+          case 1:
+            currentNode.updateScale(1.0f);
+          break;
+          case 2:
+            currentNode.updateScale(0.9f);
+          break;
+          case 3:
+            currentNode.updateScale(0.8f);
+          break;
+          case 4:
+            currentNode.updateScale(0.7f);
+          break;
+        }
       }
       // currentNode.stone = null;
       currentNode.isTaken = false;
@@ -116,7 +130,7 @@ public class Stone : MonoBehaviour
       goalNode.isTaken = true;
       goalNode.stoneCount++;
 
-      switch(goalNode.stoneCount){
+      switch(goalNode.stone.Count){
         case 1:
           goalNode.updateScale(1.0f);
         break;
@@ -207,7 +221,7 @@ public class Stone : MonoBehaviour
       goalNode.isTaken = true;
       goalNode.stoneCount++;
 
-      switch(goalNode.stoneCount){
+      switch(goalNode.stone.Count){
         case 1:
           goalNode.updateScale(1.0f);
         break;
@@ -245,7 +259,7 @@ public class Stone : MonoBehaviour
         return false;
       }
 
-      if(fullRoute[tempPos].isHome)
+      if(fullRoute[tempPos].isSafe || fullRoute[tempPos].isHome)
       {
           return true;
       }
