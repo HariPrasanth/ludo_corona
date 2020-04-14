@@ -26,7 +26,10 @@ public class Node : MonoBehaviour
             if (stone.Count > 1)
                 singleStone.transform.position = stonePositions[index++];
             else
-              singleStone.transform.position = gameObject.transform.position;
+            {
+                singleStone.transform.position = gameObject.transform.position;
+                singleStone.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+            }
         }
     }
 

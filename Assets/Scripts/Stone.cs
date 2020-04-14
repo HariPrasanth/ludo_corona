@@ -95,6 +95,9 @@ public class Stone : MonoBehaviour
       if(!goalNode.isSafe && goalNode.isTaken)
       {
         goalNode.stone[0].ReturnToBase();
+        goalNode.stone.Clear();
+        goalNode.stoneIds.Clear();
+        goalNode.stoneCount--;
       }
 
       if(currentNode.stoneCount > 0){
@@ -220,11 +223,11 @@ public class Stone : MonoBehaviour
 
       goalNode = fullRoute[routePosition];
 
-      if(!goalNode.isSafe && goalNode.isTaken)
-      {
-        //Cut
-        goalNode.stone[0].ReturnToBase();
-      }
+      // if(!goalNode.isSafe && goalNode.isTaken)
+      // {
+      //   //Cut
+      //   goalNode.stone[0].ReturnToBase();
+      // }
 
       goalNode.stone.Add(this);
       goalNode.stoneIds.Add(this.stoneIndividualId);
@@ -312,6 +315,7 @@ public class Stone : MonoBehaviour
 
     IEnumerator Return()
     {
+      Debug.Log("return called");
       GameManager.instance.ReportTurnPossible(false);
       routePosition = 0;
       currentNode = null;
