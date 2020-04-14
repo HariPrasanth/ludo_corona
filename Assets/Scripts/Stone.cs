@@ -116,20 +116,24 @@ public class Stone : MonoBehaviour
       goalNode.isTaken = true;
       goalNode.stoneCount++;
 
-      switch(goalNode.stoneCount){
-        case 1:
-          goalNode.updateScale(1.0f);
-        break;
-        case 2:
-          goalNode.updateScale(0.9f);
-        break;
-        case 3:
-          goalNode.updateScale(0.8f);
-        break;
-        case 4:
-          goalNode.updateScale(0.7f);
-        break;
-      }
+        if (goalNode.isSafe)
+        {
+            switch (goalNode.stoneCount)
+            {
+                case 1:
+                    goalNode.updateScale(1.0f);
+                    break;
+                case 2:
+                    goalNode.updateScale(0.9f);
+                    break;
+                case 3:
+                    goalNode.updateScale(0.8f);
+                    break;
+                case 4:
+                    goalNode.updateScale(0.7f);
+                    break;
+            }
+        }
 
       currentNode = goalNode;
       goalNode = null;
@@ -245,7 +249,7 @@ public class Stone : MonoBehaviour
         return false;
       }
 
-      if(fullRoute[tempPos].isHome)
+      if(fullRoute[tempPos].isHome || fullRoute[tempPos].isSafe)
       {
           return true;
       }

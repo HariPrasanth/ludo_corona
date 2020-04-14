@@ -9,7 +9,7 @@ public class AnimateAudience : MonoBehaviour
 
     void Start()
     {
-        int childCount = transform.GetChildCount();
+        int childCount = transform.childCount;
         for(int i = 0; i < childCount; i++)
         {
             audienceDolls.Add(transform.GetChild(i).GetComponent<AudienceDolls>());

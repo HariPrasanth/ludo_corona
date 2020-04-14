@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427135, b: 0.56452316, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -198,7 +198,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -288,7 +290,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -378,7 +382,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 1
   isHome: 1
   stoneCount: 0
@@ -401,7 +407,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -645,7 +652,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 1
   isHome: 1
   stoneCount: 0
@@ -884,7 +893,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -907,10 +917,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
+--- !u!1 &72905163
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 72905164}
+  m_Layer: 0
+  m_Name: rightTop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &72905164
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72905163}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5, y: 0, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1081610127}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &124392497
 GameObject:
   m_ObjectHideFlags: 0
@@ -1122,7 +1163,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 1
   isHome: 1
   stoneCount: 0
@@ -1317,7 +1360,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -1573,7 +1618,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -1776,7 +1822,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -1866,10 +1913,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
+--- !u!1 &246137851
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 246137852}
+  m_Layer: 0
+  m_Name: leftBottom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &246137852
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246137851}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5, y: -0, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1081610127}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &261013480
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1933,6 +2012,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 261013480}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &261718591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 261718592}
+  m_Layer: 0
+  m_Name: leftBottom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &261718592
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261718591}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5, y: -0, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1676116478}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &263532947
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2106,7 +2215,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -2196,7 +2306,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -2475,7 +2587,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -2565,7 +2679,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -2686,7 +2802,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -2776,7 +2893,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -2866,7 +2984,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -3045,6 +3165,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0.000000029802322, y: 0.46151975, z: -0.00000017881393}
+--- !u!1 &409268591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 409268592}
+  m_Layer: 0
+  m_Name: leftBottom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &409268592
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409268591}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5, y: -0, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1816893890}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &412306261
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3343,7 +3493,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -3679,6 +3830,7 @@ MonoBehaviour:
   - {fileID: 1557681425}
   - {fileID: 1982787272}
   diceValue: 0
+  pubDiceValue: 0
 --- !u!1001 &471286699
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3765,7 +3917,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -4040,7 +4194,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -4193,7 +4349,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -4504,7 +4662,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -4639,10 +4799,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
+--- !u!1 &623690083
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 623690084}
+  m_Layer: 0
+  m_Name: leftBottom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &623690084
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623690083}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5, y: -0, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1475570725}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &625531886
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4981,7 +5172,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -5156,6 +5349,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0.000000029802322, y: 0.46151975, z: -0.00000017881393}
+--- !u!1 &692913255
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 692913256}
+  m_Layer: 0
+  m_Name: rightTop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &692913256
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692913255}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5, y: 0, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 174692580}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &702246043
 GameObject:
   m_ObjectHideFlags: 0
@@ -5300,7 +5523,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -5577,7 +5801,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 1
   isHome: 0
   stoneCount: 0
@@ -5760,7 +5985,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -5850,7 +6076,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -5940,7 +6168,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -6239,7 +6469,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -6325,7 +6557,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -6354,7 +6587,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -6440,7 +6674,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -6463,7 +6698,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -6665,7 +6901,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -6688,7 +6926,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -6711,7 +6950,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -6734,10 +6974,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 1
   isHome: 0
   stoneCount: 0
+--- !u!1 &852777486
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 852777487}
+  m_Layer: 0
+  m_Name: rightTop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &852777487
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852777486}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5, y: 0, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1475570725}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &857270586
 GameObject:
   m_ObjectHideFlags: 0
@@ -6863,6 +7134,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 857270586}
   m_CullTransparentMesh: 0
+--- !u!1 &867230372
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 867230373}
+  m_Layer: 0
+  m_Name: rightTop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &867230373
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867230372}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5, y: 0, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1676116478}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &872245567 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: bf4463eb6d7854e15a336e61dd5cfcc3,
@@ -6882,10 +7183,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
+--- !u!1 &887996487
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 887996488}
+  m_Layer: 0
+  m_Name: rightTop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &887996488
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887996487}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5, y: 0, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 382637943}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &891950094
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6972,7 +7304,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 1
   isHome: 1
   stoneCount: 0
@@ -7062,7 +7396,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -7202,7 +7538,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 1
   isHome: 0
   stoneCount: 0
@@ -7292,7 +7629,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -7382,7 +7721,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -7405,7 +7746,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -7698,7 +8040,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -7906,7 +8250,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -8142,7 +8487,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -8165,7 +8512,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 1
   isHome: 0
   stoneCount: 0
@@ -8188,7 +8536,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -8355,7 +8704,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -8378,7 +8729,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 1
   isHome: 0
   stoneCount: 0
@@ -8671,7 +9023,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -8998,7 +9352,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -9173,6 +9528,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0.000000029802322, y: 0.46151975, z: -0.00000017881393}
+--- !u!1 &1278292168
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1278292169}
+  m_Layer: 0
+  m_Name: rightTop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1278292169
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278292168}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5019, y: 0, z: 0.4991}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1960103258}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1282814785
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9269,6 +9654,36 @@ Transform:
   - {fileID: 1044652904}
   m_Father: {fileID: 1299558610}
   m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1298358503
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1298358504}
+  m_Layer: 0
+  m_Name: leftBottom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1298358504
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298358503}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5, y: -0, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 174692580}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1299558609
 GameObject:
@@ -9410,7 +9825,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 1
   isHome: 0
   stoneCount: 0
@@ -9433,10 +9849,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
+--- !u!1 &1346659437
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1346659438}
+  m_Layer: 0
+  m_Name: leftBottom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1346659438
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346659437}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.489, y: 0, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1960103258}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1355771516
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9523,7 +9970,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -9609,7 +10058,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -9699,7 +10149,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -9722,7 +10173,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 1
   isHome: 0
   stoneCount: 0
@@ -9745,7 +10197,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -10014,6 +10467,7 @@ RectTransform:
   - {fileID: 857270587}
   - {fileID: 124392498}
   - {fileID: 296335332}
+  - {fileID: 1722924249}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10445,7 +10899,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -10468,7 +10924,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -10602,7 +11059,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -10692,7 +11150,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -10804,6 +11264,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0.000000029802322, y: 0.46151975, z: -0.00000017881393}
+--- !u!1 &1543585596
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1543585597}
+  m_Layer: 0
+  m_Name: rightTop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1543585597
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543585596}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5, y: 0, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1394263306}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1547634362
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10886,7 +11376,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -11252,7 +11743,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -11352,7 +11845,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -11438,7 +11932,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -12039,7 +12534,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -12062,7 +12559,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 1
   isHome: 0
   stoneCount: 0
@@ -12085,10 +12583,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
+--- !u!1 &1722924248
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1722924249}
+  m_Layer: 5
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1722924249
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722924248}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1450870790}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1754311483
 GameObject:
   m_ObjectHideFlags: 0
@@ -12941,10 +13475,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
+--- !u!1 &1837101072
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1837101073}
+  m_Layer: 0
+  m_Name: rightTop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1837101073
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837101072}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5, y: 0, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1816893890}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1838456359
 GameObject:
   m_ObjectHideFlags: 0
@@ -13296,7 +13861,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -13382,7 +13948,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -13585,10 +14152,71 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
+--- !u!1 &1931782586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1931782587}
+  m_Layer: 0
+  m_Name: leftBottom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1931782587
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931782586}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5, y: -0, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 382637943}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1944352665
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1944352666}
+  m_Layer: 0
+  m_Name: leftBottom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1944352666
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944352665}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5, y: -0, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1394263306}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1945143654
 GameObject:
   m_ObjectHideFlags: 0
@@ -13973,7 +14601,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -14101,7 +14731,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -14345,7 +14976,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -14498,7 +15131,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone:
+  - {fileID: 0}
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -15322,7 +15957,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
@@ -15345,7 +15981,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTaken: 0
-  stone: {fileID: 0}
+  stone: []
+  stoneIds: 
   isSafe: 0
   isHome: 0
   stoneCount: 0
