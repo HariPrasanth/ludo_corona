@@ -93,18 +93,43 @@ public class Stone : MonoBehaviour
 
       if(!goalNode.isSafe && goalNode.isTaken)
       {
-        goalNode.stone.ReturnToBase();
+        goalNode.stone[0].ReturnToBase();
       }
 
-      currentNode.stone = null;
-      currentNode.isTaken = false;
       if(currentNode.stoneCount > 0){
         currentNode.stoneCount--;
+        int removePosition = 0;
+        for(int i = 0; i < currentNode.stoneIds.Count ; i++){
+            if(currentNode.stone[i].stoneId == currentNode.stoneIds[i]){
+                removePosition = i;
+                break;
+            }
+        }
+        currentNode.stone.Remove(currentNode.stone[removePosition]);
+        currentNode.stoneIds.Remove(currentNode.stoneIds[removePosition]);
       }
+      // currentNode.stone = null;
+      currentNode.isTaken = false;
 
-      goalNode.stone = this;
+      goalNode.stone.Add(this);
+      goalNode.stoneIds.Add(this.stoneId);
       goalNode.isTaken = true;
       goalNode.stoneCount++;
+
+      switch(goalNode.stoneCount){
+        case 1:
+          goalNode.updateScale(1.0f);
+        break;
+        case 2:
+          goalNode.updateScale(0.9f);
+        break;
+        case 3:
+          goalNode.updateScale(0.8f);
+        break;
+        case 4:
+          goalNode.updateScale(0.7f);
+        break;
+      }
 
       currentNode = goalNode;
       goalNode = null;
@@ -174,12 +199,28 @@ public class Stone : MonoBehaviour
       if(!goalNode.isSafe && goalNode.isTaken)
       {
         //Cut
-        goalNode.stone.ReturnToBase();
+        goalNode.stone[0].ReturnToBase();
       }
 
-      goalNode.stone = this;
+      goalNode.stone.Add(this);
+      goalNode.stoneIds.Add(this.stoneId);
       goalNode.isTaken = true;
       goalNode.stoneCount++;
+
+      switch(goalNode.stoneCount){
+        case 1:
+          goalNode.updateScale(1.0f);
+        break;
+        case 2:
+          goalNode.updateScale(0.9f);
+        break;
+        case 3:
+          goalNode.updateScale(0.8f);
+        break;
+        case 4:
+          goalNode.updateScale(0.7f);
+        break;
+      }
 
       currentNode = goalNode;
       goalNode = null;
@@ -222,7 +263,7 @@ public class Stone : MonoBehaviour
 
       if(!fullRoute[tempPos].isSafe && fullRoute[tempPos].isTaken)
       {
-          if(stoneID == fullRoute[tempPos].stone.stoneId)
+          if(stoneID == fullRoute[tempPos].stone[0].stoneId)
           {
             return false;
           }
