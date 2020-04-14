@@ -130,6 +130,7 @@ public class Stone : MonoBehaviour
       goalNode.isTaken = true;
       goalNode.stoneCount++;
 
+<<<<<<< HEAD
       switch(goalNode.stone.Count){
         case 1:
           goalNode.updateScale(1.0f);
@@ -144,6 +145,26 @@ public class Stone : MonoBehaviour
           goalNode.updateScale(0.7f);
         break;
       }
+=======
+        if (goalNode.isSafe)
+        {
+            switch (goalNode.stoneCount)
+            {
+                case 1:
+                    goalNode.updateScale(1.0f);
+                    break;
+                case 2:
+                    goalNode.updateScale(0.9f);
+                    break;
+                case 3:
+                    goalNode.updateScale(0.8f);
+                    break;
+                case 4:
+                    goalNode.updateScale(0.7f);
+                    break;
+            }
+        }
+>>>>>>> 853045cb150e5a026090ba3474ef804789a399ef
 
       currentNode = goalNode;
       goalNode = null;

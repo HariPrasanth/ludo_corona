@@ -13,6 +13,7 @@ public class Dice : MonoBehaviour
     public DiceSide[] diceSides;
     public int diceValue;
 
+    public int pubDiceValue;
     void Start()
     {
         initPosition = transform.position;
@@ -80,7 +81,8 @@ public class Dice : MonoBehaviour
             {
                 diceValue = side.sideValue;
                 //Send result to game manager
-                GameManager.instance.RollDice(diceValue);
+                //GameManager.instance.RollDice(diceValue);
+                GameManager.instance.RollDice(pubDiceValue);
             }
         }
     }

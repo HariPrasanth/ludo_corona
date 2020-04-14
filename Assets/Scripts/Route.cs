@@ -28,17 +28,24 @@ public class Route : MonoBehaviour
 
     void FillNodes()
     {
-      childNodeList.Clear();
+        childNodeList.Clear();
 
-      childNodes = GetComponentsInChildren<Transform>();
+        Node[] nodes = GetComponentsInChildren<Node>();
 
-      foreach(Transform child in childNodes)
-      {
+        childNodes = new Transform[nodes.Length];
+
+        for(int i = 0; i < nodes.Length; i++)
+        {
+            childNodes[i] = nodes[i].GetComponent<Transform>();
+        }
+
+        foreach(Transform child in childNodes)
+        {
         if(child != this.transform)
         {
-          childNodeList.Add(child);
+            childNodeList.Add(child);
         }
-      }
+        }
     }
 
     public int RequestPosition(Transform nodeTransform)
