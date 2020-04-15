@@ -16,6 +16,6 @@ public class Info : MonoBehaviour
 
     public void ShowMessage(string text)
     {
-        // infoText.text = text;
+        infoText.text = text;
     }
 }

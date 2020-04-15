@@ -116,7 +116,8 @@ public class GameManager : MonoBehaviour
 
         int randomPlayer = Random.Range(0, playerList.Count);
         activePlayer = randomPlayer;
-        Info.instance.ShowMessage(playerList[activePlayer].playerName +" starts first!");
+        // Info.instance.ShowMessage(playerList[activePlayer].playerName +" starts first!");
+        Info.instance.ShowMessage("Roll a 6 to Move out");
     }
 
     int click = 0;
@@ -339,7 +340,7 @@ public class GameManager : MonoBehaviour
       }
 
       // Debug.Log("Dice Rolled is : "+diceNumber);
-      Info.instance.ShowMessage(playerList[activePlayer].playerName + " has rolled "+ diceNumber);
+      // Info.instance.ShowMessage(playerList[activePlayer].playerName + " has rolled "+ diceNumber);
     }
 
     IEnumerator RollDiceDelay()
@@ -352,14 +353,14 @@ public class GameManager : MonoBehaviour
     void CheckStartNode(int diceNumber)
     {
       bool startNodeFull = false;
-      for(int i = 0 ; i < playerList[activePlayer].myStones.Length; i++)
-      {
-          if(playerList[activePlayer].myStones[i].currentNode == playerList[activePlayer].myStones[i].startNode)
-          {
-            startNodeFull = true;
-            break;
-          }
-      }
+      // for(int i = 0 ; i < playerList[activePlayer].myStones.Length; i++)
+      // {
+      //     if(playerList[activePlayer].myStones[i].currentNode == playerList[activePlayer].myStones[i].startNode)
+      //     {
+      //       startNodeFull = true;
+      //       break;
+      //     }
+      // }
 
       if(startNodeFull)
       {
@@ -464,13 +465,13 @@ public class GameManager : MonoBehaviour
         {
           //GAME OVER SCREEN
           Debug.Log("Game Over!!!");
-          Info.instance.ShowMessage("Game Over!!!");
+          // Info.instance.ShowMessage("Game Over!!!");
           SceneManager.LoadScene("GameOver");
           state = States.WAITING;
           return;
         }
 
-        Info.instance.ShowMessage(playerList[activePlayer].playerName + " has got the turn!");
+        // Info.instance.ShowMessage(playerList[activePlayer].playerName + " has got the turn!");
         state = States.ROLL_DICE;
     }
 
@@ -508,7 +509,7 @@ public class GameManager : MonoBehaviour
                 break;
             }
         }
-        Info.instance.ShowMessage(playerList[activePlayer].playerName + " player has completed!!!");
+        // Info.instance.ShowMessage(playerList[activePlayer].playerName + " player has completed!!!");
         playerList[activePlayer].hasWon = true;
     }
 
@@ -602,14 +603,14 @@ public class GameManager : MonoBehaviour
         List<Stone> movableStones = new List<Stone>();
         //Check start node full
         bool startNodeFull = false;
-        for(int i = 0 ; i < playerList[activePlayer].myStones.Length; i++)
-        {
-            if(playerList[activePlayer].myStones[i].currentNode == playerList[activePlayer].myStones[i].startNode)
-            {
-              startNodeFull = true;
-              break;
-            }
-        }
+        // for(int i = 0 ; i < playerList[activePlayer].myStones.Length; i++)
+        // {
+        //     if(playerList[activePlayer].myStones[i].currentNode == playerList[activePlayer].myStones[i].startNode)
+        //     {
+        //       startNodeFull = true;
+        //       break;
+        //     }
+        // }
 
         if(rolledHumanDice < 6)
         {
