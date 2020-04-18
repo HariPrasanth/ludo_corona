@@ -12,15 +12,22 @@ public class StartGame : MonoBehaviour
     {
         for(int i = 0 ; i < SaveSettings.players.Length ; i++)
         {
-            SaveSettings.players[i] = "CPU";
-            if(i == 0)
-                SaveSettings.playerNames[i] = "RED CPU";
-            if(i == 1)
+            if(i == 0){
+              SaveSettings.players[i] = "HUMAN";
+              SaveSettings.playerNames[i] = "RED CPU";
+            }
+            if(i == 1){
+                SaveSettings.players[i] = "CPU";
                 SaveSettings.playerNames[i] = "GREEN CPU";
-            if(i == 2)
+            }
+            if(i == 2){
+                SaveSettings.players[i] = "CPU";
                 SaveSettings.playerNames[i] = "YELLOW CPU";
-            if(i == 3)
+            }
+            if(i == 3){
+                SaveSettings.players[i] = "CPU";
                 SaveSettings.playerNames[i] = "BLUE CPU";
+            }
         }
     }
 
