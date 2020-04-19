@@ -92,6 +92,10 @@ public class GameManager : MonoBehaviour
           if(SaveSettings.players[i] == "NO_PLAYER")
           {
               playerList[i].playerType = Entity.PlayerTypes.NO_PLAYER;
+              for(int j = 0; j< 4; j++)
+              {
+                playerList[i].myStones[j].SetNotActive();
+              }
               if(i == 0)
                   playerList[i].playerName = "RED";
               if(i == 1)
@@ -111,7 +115,7 @@ public class GameManager : MonoBehaviour
     }
 
     void Start()
-    {
+    {      
         ActivateButton(false);
 
         int randomPlayer = Random.Range(0, playerList.Count);

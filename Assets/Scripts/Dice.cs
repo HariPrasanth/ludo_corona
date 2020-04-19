@@ -12,6 +12,7 @@ public class Dice : MonoBehaviour
 
     public DiceSide[] diceSides;
     public int diceValue;
+    public AudioSource diceSound;
 
     public int pubDiceValue;
     void Start()
@@ -30,6 +31,7 @@ public class Dice : MonoBehaviour
             rb.useGravity = true;
             rb.maxAngularVelocity = Mathf.Infinity;
             rb.AddTorque(Random.Range(200,300), Random.Range(200,300), Random.Range(200,300));
+            diceSound.Play();
         }
         else if(thrown && hasLanded)
         {
@@ -70,6 +72,7 @@ public class Dice : MonoBehaviour
         rb.useGravity = true;
         rb.maxAngularVelocity = Mathf.Infinity;
         rb.AddTorque(Random.Range(200,300), Random.Range(200,300), Random.Range(200,300));
+        diceSound.Play();
     }
 
     void SideValueCheck()

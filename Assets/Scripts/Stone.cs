@@ -19,6 +19,10 @@ public class Stone : MonoBehaviour
     public Node currentNode;
     public Node goalNode;
 
+    public AudioSource stoneSound;
+    public AudioSource cutSound;
+    public AudioSource homeSound;
+
     int routePosition;
     int startNodeIndex;
 
@@ -29,6 +33,7 @@ public class Stone : MonoBehaviour
 
     [Header("SELECTOR")]
     public GameObject selector;
+    public GameObject highLighter;
 
     //Arc
     float amplitude = 0.5f;
@@ -43,6 +48,12 @@ public class Stone : MonoBehaviour
       CreateFullRoute();
 
       SetSelector(false);
+    }
+
+    public void SetNotActive(){
+      MeshRenderer mr = transform.GetComponent<MeshRenderer>();
+      mr.enabled = false;
+      highLighter.SetActive(false);
     }
 
     void CreateFullRoute()
@@ -180,6 +191,7 @@ public class Stone : MonoBehaviour
 
     bool MoveToNextNode(Vector3 goalPos, float speed)
     {
+      cutSound.Play();
       return goalPos != (transform.position = Vector3.MoveTowards(transform.position, goalPos, speed * Time.deltaTime));
     }
 
@@ -188,7 +200,7 @@ public class Stone : MonoBehaviour
       cTime += speed * Time.deltaTime;
       Vector3 myPosition = Vector3.Lerp(startPos, goalPos, cTime);
       myPosition.y += amplitude * Mathf.Sin(Mathf.Clamp01(cTime) * Mathf.PI);
-
+      stoneSound.Play();
       return goalPos != (transform.position = Vector3.Lerp(transform.position, myPosition, cTime));
     }
 
@@ -315,7 +327,6 @@ public class Stone : MonoBehaviour
 
     IEnumerator Return()
     {
-      Debug.Log("return called");
       GameManager.instance.ReportTurnPossible(false);
       routePosition = 0;
       currentNode = null;
@@ -339,7 +350,7 @@ public class Stone : MonoBehaviour
         // }
         if(fullRoute[fullRoute.Count - 1].stoneCount == 4)
         {
-            Debug.Log("Complete Count "+fullRoute[fullRoute.Count - 1].stoneCount);
+            homeSound.Play();
             return true;
         }
         return false;

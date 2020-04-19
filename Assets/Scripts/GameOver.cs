@@ -7,9 +7,11 @@ using UnityEngine.SceneManagement;
 public class GameOver : MonoBehaviour
 {
     public Text first, second, third;
+    public AudioSource gameOverAudio;
     // Start is called before the first frame update
     void Start()
     {
+        gameOverAudio.Play();
         first.text = "1st : "+SaveSettings.winners[0];
         second.text = "2nd : "+SaveSettings.winners[1];
         third.text = "3rd : "+SaveSettings.winners[2];
