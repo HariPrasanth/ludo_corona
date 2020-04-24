@@ -115,7 +115,7 @@ public class GameManager : MonoBehaviour
     }
 
     void Start()
-    {      
+    {
         ActivateButton(false);
 
         int randomPlayer = Random.Range(0, playerList.Count);

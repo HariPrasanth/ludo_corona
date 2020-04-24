@@ -39,6 +39,8 @@ public class Stone : MonoBehaviour
     float amplitude = 0.5f;
     float cTime = 0f;
 
+    bool didCut = false;
+
     int steps; // DICE NUMBER
     int doneSteps; // DICE NUMBER
 
@@ -105,6 +107,7 @@ public class Stone : MonoBehaviour
 
       if(!goalNode.isSafe && goalNode.isTaken)
       {
+        didCut = true;
         goalNode.stone[0].ReturnToBase();
         goalNode.stone.Clear();
         goalNode.stoneIds.Clear();
@@ -179,13 +182,13 @@ public class Stone : MonoBehaviour
           GameManager.instance.ReportWinning();
       }
 
-      if(diceNumber < 6)
+      if(diceNumber < 6 && !didCut)
       {
         GameManager.instance.state = GameManager.States.SWITCH_PLAYER;
       }else{
         GameManager.instance.state = GameManager.States.ROLL_DICE;
       }
-
+      didCut = false;
       isMoving = false;
     }
 
@@ -224,7 +227,6 @@ public class Stone : MonoBehaviour
         // routePosition++;
         Vector3 nextPos = fullRoute[routePosition].gameObject.transform.position;
         Vector3 startPos = baseNode.gameObject.transform.position;
-        // while(MoveToNextNode(nextPos, 8f)){yield return null;}
         while(MoveInArcToNextNode(startPos, nextPos, 8f)){yield return null;}
         yield return new WaitForSeconds(0.05f);
         cTime = 0;
