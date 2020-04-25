@@ -646,7 +646,12 @@ public class GameManager : MonoBehaviour
 
           if(movableStones.Count == 1)
           {
-              MoveAStone(rolledHumanDice);
+              if(!movableStones[0].ReturnIsOut()){
+                  Debug.Log(""+movableStones[0].ReturnIsOut());
+                  movableStones[0].LeaveBase();
+              }else{
+                  MoveAStone(rolledHumanDice);
+              }
           }else{
             for(int i = 0 ; i < movableStones.Count; i++)
             {
